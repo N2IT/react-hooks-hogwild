@@ -5,7 +5,7 @@ function TileList({ hogs }) {
     return (
         <div className="ui grid container">
             {hogs.map((hog) => {
-                console.log(hog["highest medal achieved"])
+                // console.log(hog["highest medal achieved"])
                 return(
                 <Tiles 
                 key={hog.name}

@@ -1,6 +1,7 @@
 import React from "react";
 import piggy from "../assets/porco.png";
 
+
 const Nav = () => {
 	return (
 		<div className="navWrapper">
@@ -11,6 +12,9 @@ const Nav = () => {
 			<span className="normalText">
 				A React App for County Fair Hog Fans
 			</span>
+			<div>
+				<input type="checkbox" id="greased" label="greased">Greased</input>
+			</div>
 		</div>
 	);
 };

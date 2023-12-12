@@ -4,9 +4,9 @@ function Tiles({ name, specialty, greased, image, weight, medal  }) {
     
     return (
         <div className="ui four wide column">
-            <div className="pigTile" key={name}>
-            <p>Name: {name}</p>
-            <img className="minPigTile" alt={name} src={image}></img>
+            <div className="ui card" key={name}>
+            <p className="smallHeader">Name: {name}</p>
+            <img className="image img" alt={name} src={image}></img>
             </div>
         </div>
     )
