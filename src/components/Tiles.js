@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Details from './Details'
 
-function Tiles({ key, name, specialty, greased, image, weight, medal, hog }) {
+function Tiles({ name, specialty, greased, image, weight, medal }) {
     const [wasClicked, setAsWasClicked] = useState(false)
     
     function handleClick(id) {
