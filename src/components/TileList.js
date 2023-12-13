@@ -1,7 +1,7 @@
 import React from 'react'
 import Tiles from './Tiles'
 
-function TileList({ hogs, showGreased, setShowGreased }) {
+function TileList({ hogs, showGreased }) {
  const filteredHogs = hogs.filter((hog) => hog.greased === showGreased || hog.greased )
     // console.log()
     return (
