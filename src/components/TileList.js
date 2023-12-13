@@ -1,11 +1,13 @@
 import React from 'react'
 import Tiles from './Tiles'
 
-function TileList({ hogs }) {
+function TileList({ hogs, showGreased, setShowGreased }) {
+ const filteredHogs = hogs.filter((hog) => hog.greased === showGreased)
+    // console.log(filteredHogs)
     return (
         <div className="ui grid container">
-            {hogs.map((hog) => {
-                // console.log(hog["highest medal achieved"])
+            {filteredHogs.map((hog) => {
+                // console.log(hog.greased)
                 return(
                 <Tiles 
                 key={hog.name}
@@ -14,7 +16,7 @@ function TileList({ hogs }) {
                 greased={hog.greased}
                 image={hog.image}
                 weight={hog.weight}
-                medal={hog["hightest medal achieved"]}/>
+                medal={hog['highest medal achieved']}/>
             )})}
 
         </div>
